@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease 0.3;
+}
+
+/* New Section Added On top */
+.main {
+  background: linear-gradient(to bottom, #003125, #00816c, #00bd8e, #003125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main div {
+  padding: 4rem;
+  gap: 1rem;
+}
+.main h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+.main p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+.main a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  outline: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.main a:hover {
+  border: none;
+  background-color: #ffffff;
+  color: #000;
+}
+.main img {
+  width: 40%;
+  height: auto;
+  padding: 2rem;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.why {
+  padding: 4rem 4rem;
+  background-color: #fff;
+  color: #003125;
+}
+.why h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* End */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body main {
+  background: linear-gradient(to bottom, #003125, #00816c, #00bd8e, #003125);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+body main h1 {
+  text-align: center;
+  text-wrap: wrap;
+  font-size: 3rem;
+  margin-top: 6rem;
+  color: #fff;
+}
+body main p {
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+}
+body main .hero-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); */
+}
+.hero-banner img {
+  width: 70%;
+  height: auto;
+  /* border-radius: 20px; */
+  padding-bottom: 2rem;
+}
+.block-rec {
+  /* text-align: center; */
+  padding: 2rem 4rem;
+  background-color: #f1f1f1;
+  color: #003125;
+}
+.block-rec h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+.block-rec a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  outline: 2px solid #000;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.block-rec a:hover {
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+.make-selection {
+  background: linear-gradient(to bottom, #003125, #00816c, #00bd8e, #003125);
+  padding: 2rem 4rem;
+}
+.make-selection h1 {
+  text-align: center;
+  padding-top: 2rem;
+  color: #fff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 1rem; /* Gap between grid items */
+  padding: 2rem 0;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 2rem; /* Padding for grid items */
+  color: #003125;
+}
+.grid-item:hover {
+  background-color: #00bd8e;
+  /* color: #fff; */
+}
+.grid-item a {
+  text-decoration: none;
+  color: #003125;
+}
+.grid-item svg {
+  font-size: 25px;
+}
+.grid-item h4 {
+  margin: 1rem 0;
+}
+.grid-item span {
+  font-style: italic; /* Italicize span text */
+}
+footer {
+  background-color: #003125;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  align-items: center;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body main h1 {
+    font-size: 2rem;
+  }
+  .main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .main img {
+    width: 80%;
+  }
+  .why {
+    padding: 2rem;
+    background-color: #fff;
+    color: #003125;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .main div {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+  .main img {
+    width: 100%;
+  }
+  .hero-banner img {
+    width: 90%;
+  }
+  .block-rec {
+    /* text-align: center; */
+    padding: 2rem 2rem;
+    background-color: #f1f1f1;
+    color: #003125;
+  }
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column on even smaller screens */
+  }
+}
